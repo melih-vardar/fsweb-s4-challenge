@@ -1,3 +1,636 @@
+* {
+  border: 1px solid purple;
+}
+
+body{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+header {
+  background-image: url("assets/iteration-1/home-banner.png");
+  background-repeat: no-repeat;
+  gap:10px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width: 1920px;
+  height: 1080px;
+}
+
+header h1 {
+  width: 363px;
+  height: 50px;
+  font-family: "Londrina Solid";
+  font-size: 50px;
+  font-weight:400;
+  line-height: 50px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.header-content {
+  width: 586.67px;
+  height: 300px;
+  padding: 0px 0px 0.73px 0px;
+  display:flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+}
+
+.header-content button {
+  width: 193.27px;
+  height: 56px;
+  padding: 3.73px 50.16px 0.27px 49.64px;
+  border-radius: 50px;
+  background: #FDC913;
+}
+
+#button-text {
+  width: 93.47px;
+  height: 52px;
+  font-family: "Barlow";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 56px;
+  text-align: center;
+  color: #292929;
+}
+
+
+.header-content h2 {
+  width: 324px;
+  height: 46px;
+  font-family: "Satisfy";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44.27px;
+  text-align: center;
+  color: #FDC913;
+}
+
+.header-content h1 {
+  width: 767.64px;
+  height: 195px;
+  font-family: "Roboto Condensed";
+  font-size: 86px;
+  font-weight: 300;
+  line-height: 92px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/*
+
+* {
+  border: 1px solid purple;
+}
+
+html {
+  width:1920px;
+  height:1080px;
+}
+
+body{
+  width:1920px;
+  height:1080px;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content:flex-start;
+}
+
+header {
+  background-image: url("assets/iteration-1/home-banner.png");
+  width:1920px;
+  min-height:1080px;
+  background-repeat: no-repeat;
+  gap:10px;
+  opacity: 0px;
+  display:flex;
+  flex-direction:column;
+}
+
+.header-first {
+  align-self:center
+}
+
+.header-first h1 {
+  width: 363px;
+  height: 50px;
+  top: 56px;
+  left: 778px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "Londrina Solid";
+  font-size: 50px;
+  font-weight:400;
+  line-height: 50px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.header-content {
+  align-self: center;
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 586.67px;
+  height: 300px;
+  padding: 0px 0px 0.73px 0px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.header-content button {
+  width: 193.27px;
+  height: 56px;
+  top: 243.27px;
+  left: 196.36px;
+  padding: 3.73px 50.16px 0.27px 49.64px;
+  gap: 0px;
+  border-radius: 50px;
+  opacity: 0px;
+  background: #FDC913;
+  margin:0;
+  padding:0;
+}
+
+#button-text {
+  width: 93.47px;
+  height: 52px;
+  top: 3.73px;
+  left: 49.64px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "Barlow";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 56px;
+  text-align: center;
+  color: #292929;
+}
+
+
+.header-content h2 {
+  width: 324px;
+  height: 46px;
+  left: 131px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "Satisfy";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44.27px;
+  text-align: center;
+  color: #FDC913;
+  margin:0;
+}
+
+.header-content h1 {
+  width: 767.64px;
+  height: 195px;
+  top: 35px;
+  left: -90.48px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "Roboto Condensed";
+  font-size: 86px;
+  font-weight: 300;
+  line-height: 92px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: #FFFFFF;
+  margin:0;
+}
+
+.header-nav {
+  width:1068px;
+  height: 94px;
+  top: 1080px;
+  padding: 26px 426px 26px 426px;
+  gap: 10px;
+  opacity: 0px;
+  background: #FFFFFF;
+  align-content: center;
+  display:flex;
+  justify-content: center;
+}
+
+.header-nav2 {
+  width: 1068px;
+  object-fit:fill;
+  height: auto;
+  padding: auto;
+  margin: auto;
+}
+
+.header-nav2 ul {
+  gap: 0px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto auto;
+  opacity: 0px;
+  list-style:none;
+  padding:0;
+}
+
+.header-nav2 ul li {
+  margin:0;
+  padding:0;
+}
+
+.header-nav2 ul li a {
+  gap: 16px;
+  opacity: 0px;
+  padding: 0px 3.8px 0px 0px;
+  width: auto;
+  height: auto;
+  display:flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Barlow";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32.4px;
+  text-align: left;
+  color:black;
+  margin:0;
+}
+
+*/
+
+/* order part - LEZZETUS */
+
+/*
+
+.order {
+  width: 1072px;
+  height: 449px;
+  top: 1242px;
+  left: 424px;
+  opacity: 0px;
+  display:flex;
+  flex-direction:row;
+  align-self: center;
+  gap: 11px;
+  position:absolute;
+}
+
+#lezzetus-card {
+  background-image: url("assets/iteration-2/cta/kart-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 531px;
+  height: 449px;
+  display:flex;
+  flex-direction: column;
+  gap: 0px;
+  opacity: 0px;
+  border-radius: 12px;
+}
+
+#lezzetus-text-frame {
+  width: 158.61px;
+  height: 251.75px;
+  top: 44px;
+  left: 49px;
+  position: relative;
+  gap: 0px;
+  opacity: 0px;
+  display:flex;
+  flex-direction: column;
+}
+
+#lezzetus-card h3 {
+  width: 288.18px;
+  height: 148px;
+  top: -2.09px;
+  left: -10px;
+  position: relative;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "Quattrocento";
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: left;
+  color: #FFFFFF;
+  margin:0;
+}
+
+#lezzetus-card h4 {
+  width: 275px;
+  height: 27px;
+  top: 151.75px;
+  left: -10px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "Barlow";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26.76px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+#lezzetus-card button {
+  width: 138px;
+  height: 48px;
+  top: 203.75px;
+  left: -10px;
+  padding: 3px 18px 0px 18px;
+  gap: 0px;
+  border-radius: 50px;
+  opacity: 0px;
+  background: #FFFFFF;
+  display:flex;
+  align-items:center;
+}
+
+#order-button-text {
+  width: 102px;
+  height: 45px;
+  top: 3px;
+  left: 18px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "Barlow";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  color: #CE2829;
+}
+
+*/
+
+/* order part - GERİ KALAN */
+
+/*
+
+#rest-card {
+  width: 530px;
+  height: 449px;
+  display:flex;
+  flex-direction:column;
+  gap: 9px;
+  opacity: 0px;
+}
+
+#hackathlon {
+  width: 530px;
+  height: 220px;
+  gap: 0px;
+  border-radius: 12px;
+  opacity: 0px;
+  background-image: url("assets/iteration-2/cta/kart-2.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding: 32px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+#hackathlon-text-frame{
+  width: 182.35px;
+  height: 163px;
+  gap: 0px;
+  border-radius: 50px;
+  opacity: 0px;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+}
+
+#hackathlon h4 {
+  width: 182.35px;
+  height: 86px;
+  top: 28.5px;
+  left: 32px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "Barlow";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44.27px;
+  text-align: left;
+  color: #FFFFFF;
+  margin-top:auto;
+}
+
+#hackathlon button {
+  width: 138px;
+  height: 48px;
+  top: 143.5px;
+  left: 32px;
+  padding: 3px 18px 0px 18px;
+  gap: 0px;
+  border-radius: 50px;
+  opacity: 0px;
+  background: #FFFFFF;
+  display:flex;
+  align-items:center;
+}
+
+#kurye {
+  width: 530px;
+  height: 220px;
+  padding: 32px;
+  border-radius: 12px;
+  gap: 0px;
+  display:flex;
+  justify-content: space-between;
+  opacity: 0px;
+  background-image: url("assets/iteration-2/cta/kart-3.png");
+  background-repeat: no-repeat;
+  background-size:cover;  
+}
+
+#kurye-text-frame{
+  width: 212px;
+  height: 161px;
+  gap: 0px;
+  opacity: 0px;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+}
+
+#kurye h4 {
+  width: 254px;
+  height: 88px;
+  top: 0.47px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "Barlow";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44.27px;
+  text-align: left;
+  color: #D80027;
+  margin-top:auto;
+}
+
+#npm-gibi {
+  color: #292929;
+}
+
+#kurye button {
+  width: 138px;
+  height: 48px;
+  top: 113.47px;
+  padding: 3px 18px 0px 18px;
+  gap: 0px;
+  border-radius: 50px;
+  opacity: 0px;
+  background: #FFFFFF;
+  display:flex;
+  align-items:center;
+}
+
+*/
+
+/* ara text */
+
+/*
+
+.ara-text {
+  width: 1296px;
+  height: 110.45px;
+  top: 1755px;
+  left: 312px;
+  padding: 0px 292px 9.45px 292px;
+  gap: 0px;
+  opacity: 0px;
+  position:absolute;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.ara-text h2 {
+  width: 408px;
+  height: 46px;
+  top: -9px;
+  left: 444px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "Satisfy";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44.27px;
+  text-align: center;
+  color: #CE2829;
+  margin-top:auto;
+}
+
+.ara-text h3 {
+  width: 712px;
+  height: 56px;
+  top: 45px;
+  left: 292px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "Barlow";
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 56.2px;
+  text-align: center;
+  color: #292929;
+  margin: auto auto;
+}
+
+.ara-nav {
+  width: 1068px;
+  height: 197px;
+  top: 1882px;
+  left: 425px;
+  gap: 0px;
+  display:flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  opacity: 0px;
+  position:absolute;
+}
+
+.ara-nav ul {
+  gap: 0px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0px;
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.ara-nav ul li {
+  margin:0;
+  padding:0;
+}
+
+.ara-nav ul li a {
+  width: 146.72px;
+  height: 66px;
+  padding: 12px 20px 12px 20px;
+  gap: 10px;
+  border-radius: 50px;
+  opacity: 0px;
+  background: #FFFFFF;
+  font-family: "Barlow";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32.4px;
+  text-align: center;
+  color: #292929;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+*/
+
+/*
+
+.header-nav2 ul li a:nth-child(n) {
+  width: auto;
+  height: auto;
+}
+
+.header-nav2 ul li a:nth-child(n+1) {
+  width: 102.81px;
+  height: 42px;
+}
+
+.header-nav2 ul li a:nth-child(n+2) {
+  width: 115.22px;
+  height: 42px;
+}
+
+.header-nav2 ul li a:nth-child(n+3) {
+  width: 156.66px;
+  height: 42px;
+}
+
+.header-nav2 ul li a:nth-child(n+4) {
+  width: 135.59px;
+  height: 42px;
+}
+
+.header-nav2 ul li a:nth-child(n+5) {
+  width: 148.08px;
+  height: 42px;
+}
+
+DEFAULT KODLAR
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -95,3 +728,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+*/

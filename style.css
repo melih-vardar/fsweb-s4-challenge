@@ -1,11 +1,11 @@
-* {
-  border: 1px solid purple;
-}
+
 
 body{
   display:flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
+  gap:0; /* we will make the spaces with relative position since there are differences. ✓ */
+  background:#FAF7F2
 }
 
 header {
@@ -19,7 +19,7 @@ header {
   height: 1080px;
 }
 
-header h1 {
+#teknolojik {
   width: 363px;
   height: 50px;
   font-family: "Londrina Solid";
@@ -28,6 +28,8 @@ header h1 {
   line-height: 50px;
   text-align: center;
   color: #FFFFFF;
+  top:56px;
+  margin-bottom:53px;
 }
 
 .header-content {
@@ -38,6 +40,9 @@ header h1 {
   flex-direction: column;
   gap: 0px;
   align-items: center;
+  top:159px;
+  justify-content: center;
+  position:absolute;
 }
 
 .header-content button {
@@ -59,7 +64,6 @@ header h1 {
   color: #292929;
 }
 
-
 .header-content h2 {
   width: 324px;
   height: 46px;
@@ -69,6 +73,7 @@ header h1 {
   line-height: 44.27px;
   text-align: center;
   color: #FDC913;
+  margin:0;
 }
 
 .header-content h1 {
@@ -81,176 +86,44 @@ header h1 {
   letter-spacing: 1.5px;
   text-align: center;
   color: #FFFFFF;
-}
-
-/*
-
-* {
-  border: 1px solid purple;
-}
-
-html {
-  width:1920px;
-  height:1080px;
-}
-
-body{
-  width:1920px;
-  height:1080px;
-  display:flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content:flex-start;
-}
-
-header {
-  background-image: url("assets/iteration-1/home-banner.png");
-  width:1920px;
-  min-height:1080px;
-  background-repeat: no-repeat;
-  gap:10px;
-  opacity: 0px;
-  display:flex;
-  flex-direction:column;
-}
-
-.header-first {
-  align-self:center
-}
-
-.header-first h1 {
-  width: 363px;
-  height: 50px;
-  top: 56px;
-  left: 778px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: "Londrina Solid";
-  font-size: 50px;
-  font-weight:400;
-  line-height: 50px;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-.header-content {
-  align-self: center;
-  display:flex;
-  flex-direction:column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 586.67px;
-  height: 300px;
-  padding: 0px 0px 0.73px 0px;
-  gap: 0px;
-  opacity: 0px;
-}
-
-.header-content button {
-  width: 193.27px;
-  height: 56px;
-  top: 243.27px;
-  left: 196.36px;
-  padding: 3.73px 50.16px 0.27px 49.64px;
-  gap: 0px;
-  border-radius: 50px;
-  opacity: 0px;
-  background: #FDC913;
-  margin:0;
-  padding:0;
-}
-
-#button-text {
-  width: 93.47px;
-  height: 52px;
-  top: 3.73px;
-  left: 49.64px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: "Barlow";
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 56px;
-  text-align: center;
-  color: #292929;
-}
-
-
-.header-content h2 {
-  width: 324px;
-  height: 46px;
-  left: 131px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: "Satisfy";
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 44.27px;
-  text-align: center;
-  color: #FDC913;
-  margin:0;
-}
-
-.header-content h1 {
-  width: 767.64px;
-  height: 195px;
-  top: 35px;
-  left: -90.48px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: "Roboto Condensed";
-  font-size: 86px;
-  font-weight: 300;
-  line-height: 92px;
-  letter-spacing: 1.5px;
-  text-align: center;
-  color: #FFFFFF;
-  margin:0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .header-nav {
   width:1068px;
-  height: 94px;
-  top: 1080px;
+  height: 42px; /* 94-26-26 */
   padding: 26px 426px 26px 426px;
   gap: 10px;
-  opacity: 0px;
   background: #FFFFFF;
   align-content: center;
+  align-items: center;
   display:flex;
   justify-content: center;
 }
 
-.header-nav2 {
-  width: 1068px;
-  object-fit:fill;
-  height: auto;
-  padding: auto;
-  margin: auto;
-}
-
-.header-nav2 ul {
-  gap: 0px;
+.header-nav ul {
+  gap: 52.13px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: auto auto;
-  opacity: 0px;
   list-style:none;
   padding:0;
+  flex-wrap: nowrap;
+  width: 1068px;
 }
 
-.header-nav2 ul li {
+.header-nav ul li {
   margin:0;
   padding:0;
 }
 
-.header-nav2 ul li a {
+.header-nav ul li a {
   gap: 16px;
-  opacity: 0px;
   padding: 0px 3.8px 0px 0px;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   display:flex;
   align-items: center;
   text-decoration: none;
@@ -260,26 +133,17 @@ header {
   line-height: 32.4px;
   text-align: left;
   color:black;
-  margin:0;
 }
-
-*/
-
-/* order part - LEZZETUS */
-
-/*
 
 .order {
   width: 1072px;
   height: 449px;
-  top: 1242px;
-  left: 424px;
-  opacity: 0px;
   display:flex;
   flex-direction:row;
   align-self: center;
   gap: 11px;
-  position:absolute;
+  position: relative;
+  top: 68px;
 }
 
 #lezzetus-card {
@@ -291,7 +155,6 @@ header {
   display:flex;
   flex-direction: column;
   gap: 0px;
-  opacity: 0px;
   border-radius: 12px;
 }
 
@@ -301,8 +164,7 @@ header {
   top: 44px;
   left: 49px;
   position: relative;
-  gap: 0px;
-  opacity: 0px;
+  gap: 5.84px;
   display:flex;
   flex-direction: column;
 }
@@ -327,27 +189,25 @@ header {
 #lezzetus-card h4 {
   width: 275px;
   height: 27px;
-  top: 151.75px;
   left: -10px;
-  gap: 0px;
-  opacity: 0px;
+  position: relative;
   font-family: "Barlow";
   font-size: 20px;
   font-weight: 600;
   line-height: 26.76px;
   text-align: left;
   color: #FFFFFF;
+  margin:0;
 }
 
 #lezzetus-card button {
   width: 138px;
   height: 48px;
-  top: 203.75px;
   left: -10px;
+  position: relative;
+  margin-top: 19.16px; /* extra space is given for button (25px - 5.84px) ✓ */
   padding: 3px 18px 0px 18px;
-  gap: 0px;
   border-radius: 50px;
-  opacity: 0px;
   background: #FFFFFF;
   display:flex;
   align-items:center;
@@ -368,11 +228,7 @@ header {
   color: #CE2829;
 }
 
-*/
-
 /* order part - GERİ KALAN */
-
-/*
 
 #rest-card {
   width: 530px;
@@ -380,74 +236,59 @@ header {
   display:flex;
   flex-direction:column;
   gap: 9px;
-  opacity: 0px;
 }
 
 #hackathlon {
-  width: 530px;
-  height: 220px;
-  gap: 0px;
+  width: 100%;
+  height: 50%;
   border-radius: 12px;
-  opacity: 0px;
   background-image: url("assets/iteration-2/cta/kart-2.png");
   background-repeat: no-repeat;
   background-size:cover;
-  padding: 32px;
   display:flex;
   flex-direction:column;
-  justify-content:space-between;
 }
 
 #hackathlon-text-frame{
   width: 182.35px;
   height: 163px;
-  gap: 0px;
   border-radius: 50px;
-  opacity: 0px;
-  position:relative;
   display:flex;
   flex-direction:column;
+  position:relative;
+  top: 28.5px;
+  left:32px;
+  gap:29px;
 }
 
 #hackathlon h4 {
   width: 182.35px;
   height: 86px;
-  top: 28.5px;
-  left: 32px;
-  gap: 0px;
-  opacity: 0px;
   font-family: "Barlow";
   font-size: 32px;
   font-weight: 600;
   line-height: 44.27px;
   text-align: left;
   color: #FFFFFF;
-  margin-top:auto;
+  margin:auto;
 }
 
 #hackathlon button {
   width: 138px;
   height: 48px;
-  top: 143.5px;
-  left: 32px;
   padding: 3px 18px 0px 18px;
-  gap: 0px;
   border-radius: 50px;
-  opacity: 0px;
   background: #FFFFFF;
   display:flex;
   align-items:center;
 }
 
 #kurye {
-  width: 530px;
-  height: 220px;
-  padding: 32px;
+  width: 100%;
+  height: 50%;
   border-radius: 12px;
-  gap: 0px;
   display:flex;
   justify-content: space-between;
-  opacity: 0px;
   background-image: url("assets/iteration-2/cta/kart-3.png");
   background-repeat: no-repeat;
   background-size:cover;  
@@ -456,26 +297,26 @@ header {
 #kurye-text-frame{
   width: 212px;
   height: 161px;
-  gap: 0px;
-  opacity: 0px;
-  position:relative;
   display:flex;
   flex-direction:column;
+  position:relative;
+  top:29.5px;
+  left:32px;
+  gap:24.94px; /* distance between text & button */
 }
 
 #kurye h4 {
   width: 254px;
   height: 88px;
+  position: relative;
   top: 0.47px;
-  gap: 0px;
-  opacity: 0px;
   font-family: "Barlow";
   font-size: 32px;
   font-weight: 600;
   line-height: 44.27px;
   text-align: left;
   color: #D80027;
-  margin-top:auto;
+  margin: 0;
 }
 
 #npm-gibi {
@@ -485,247 +326,233 @@ header {
 #kurye button {
   width: 138px;
   height: 48px;
-  top: 113.47px;
   padding: 3px 18px 0px 18px;
-  gap: 0px;
   border-radius: 50px;
-  opacity: 0px;
   background: #FFFFFF;
   display:flex;
   align-items:center;
 }
 
-*/
-
 /* ara text */
-
-/*
 
 .ara-text {
   width: 1296px;
   height: 110.45px;
-  top: 1755px;
-  left: 312px;
+  top: 132px; /* 64+68 */
   padding: 0px 292px 9.45px 292px;
   gap: 0px;
-  opacity: 0px;
-  position:absolute;
   display:flex;
   flex-direction:column;
   align-items: center;
+  position: relative;
 }
 
 .ara-text h2 {
   width: 408px;
   height: 46px;
+  position:relative;
   top: -9px;
-  left: 444px;
-  gap: 0px;
-  opacity: 0px;
   font-family: "Satisfy";
   font-size: 32px;
   font-weight: 400;
   line-height: 44.27px;
   text-align: center;
   color: #CE2829;
-  margin-top:auto;
+  margin: 0;
 }
 
 .ara-text h3 {
   width: 712px;
   height: 56px;
-  top: 45px;
-  left: 292px;
-  gap: 0px;
-  opacity: 0px;
   font-family: "Barlow";
   font-size: 42px;
   font-weight: 600;
   line-height: 56.2px;
   text-align: center;
   color: #292929;
-  margin: auto auto;
+  margin: 0;
+  position:relative;
+  top: -1px; /* to make the space between h2&h3 8px */
 }
 
 .ara-nav {
   width: 1068px;
-  height: 197px;
-  top: 1882px;
-  left: 425px;
-  gap: 0px;
+  height: 190px;
+  position: relative;
+  top: 148.55px; /* 64+68+16.55 */
   display:flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-between;
-  opacity: 0px;
-  position:absolute;
+  align-items:flex-start;
+  padding:0;
 }
 
-.ara-nav ul {
-  gap: 0px;
+.ara-nav-nav {
+  margin:0;
+}
+
+#ara-nav-ul {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  opacity: 0px;
+  gap:22.39px;
   list-style:none;
   padding:0;
   margin:0;
+  width:1068px;
+  flex-wrap: nowrap;
 }
 
-.ara-nav ul li {
-  margin:0;
-  padding:0;
-}
-
-.ara-nav ul li a {
-  width: 146.72px;
-  height: 66px;
+.ara-nav-li {
+  height: 100%;
   padding: 12px 20px 12px 20px;
-  gap: 10px;
+  margin:0;
   border-radius: 50px;
-  opacity: 0px;
   background: #FFFFFF;
+  display:flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.ara-nav-li:nth-child(2) {
+  background: #292929;
+}
+
+.ara-nav-span {
+  color: #FFFFFF;
+}
+
+.ara-nav-a {
+  margin:0;
+  display:flex;
+  gap:10px;
+  flex-wrap: nowrap;
+  width:100%;
+  height: 100%;
+  text-decoration:none ;
+  align-items: center;
+  color: #292929;
   font-family: "Barlow";
   font-size: 18px;
   font-weight: 500;
   line-height: 32.4px;
-  text-align: center;
-  color: #292929;
+  text-align:center;
+}
+
+/* ARA TANITIM BÖLÜMÜ PİZZALAR VE BURGER */
+
+.ara-tanitim {
+  width: 1068px;
+  height: 430px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  position:relative;
+  top: 72px;
+}
+
+.tanitim {
+  width: 334.67px;
+  height: 419px;
+  border-radius: 12px;
+  background: #FFFFFF;
   display:flex;
   align-items: center;
   justify-content: center;
+  box-sizing:border-box; /* to protect box-size while adding padding */
+  padding:32px;
 }
 
-*/
-
-/*
-
-.header-nav2 ul li a:nth-child(n) {
-  width: auto;
-  height: auto;
+.tanitim img {
+  width: 270.67px;
+  height: 265px;
 }
 
-.header-nav2 ul li a:nth-child(n+1) {
-  width: 102.81px;
-  height: 42px;
+.tanitim-frame {
+  width: 270.67px;
+  height: 355px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin:0;
 }
 
-.header-nav2 ul li a:nth-child(n+2) {
-  width: 115.22px;
-  height: 42px;
+.tanitim-textbox {
+  width: 270.67px;
+  height: 66px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
 }
 
-.header-nav2 ul li a:nth-child(n+3) {
-  width: 156.66px;
-  height: 42px;
+.tanitim-textbox2 {
+  width: 270.67px;
+  height: 29px;
+  gap: 121.14px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header-nav2 ul li a:nth-child(n+4) {
-  width: 135.59px;
-  height: 42px;
+.tanitim-textbox h2 {
+  width: 270.67px;
+  height: 29px;
+  font-family: "Barlow";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 29.44px;
+  text-align: left;
+  color: #292929;
+  margin:0;
 }
 
-.header-nav2 ul li a:nth-child(n+5) {
-  width: 148.08px;
-  height: 42px;
+.tanitim-textbox2 h3 {
+  width: 23px;
+  height: 29px;
+  font-family: "Barlow";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28.8px;
+  text-align: left;
+  color: #1B1B1BB2;
+  margin:0;
 }
 
-DEFAULT KODLAR
-
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+.textbox2-group {
+width: 126.53px;
+height: 29px;
+display:flex;
+justify-content: space-between;
+gap: 33.52px;
+align-items:center;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.textbox2-group h3 {
+  width: 38px;
+  height: 29px;
+  left: 144.14px;
+  font-family: "Barlow";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28.8px;
+  text-align: left;
+  color: #1B1B1BB2;
+  margin:0;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.fiyat {
+  width: 55.01px;
+  height: 25px;
+  top: 2px;
+  left: 215.65px;
+  font-family: "Barlow";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.76px;
+  text-align: right;
+  color: #292929;
 }
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-*/

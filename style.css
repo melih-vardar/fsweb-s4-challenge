@@ -856,3 +856,47 @@ margin-bottom: 4.5px;
   background: #FFFFFF;
   margin:0;
 }
+
+@media (max-width:756px) {
+  html{
+    font-size: 62.5%; /* 1rem = 10px */
+    width: 100vw;
+    height: 100vh;
+  }
+
+  body {
+    min-width: 350px;
+    overflow:hidden;
+  }
+
+  .header {
+    display:flex;
+    justify-content: column;
+    align-items: center; 
+  }
+
+  .header h1 {
+    display:flex;
+    justify-content: column;
+    align-items: center;
+  }
+
+  .header-content {
+    display:flex;
+  }
+
+  #teknolojik {
+    font-size:5rem;
+    align-self: center;
+    text-align: center;
+  }
+
+  .header-content h2 {
+    display:none;
+  }
+  
+  .header-content h1 {
+    width: 40rem;
+  }
+
+}

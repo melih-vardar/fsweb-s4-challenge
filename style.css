@@ -858,45 +858,50 @@ margin-bottom: 4.5px;
 }
 
 @media (max-width:756px) {
+  
   html{
     font-size: 62.5%; /* 1rem = 10px */
-    width: 100vw;
+    width: auto;
+    height: auto;
+  }
+
+  header {
+    width:auto;
     height: 100vh;
+    background-position:center;
+    gap:10rem;
   }
 
-  body {
-    min-width: 350px;
-    overflow:hidden;
-  }
-
-  .header {
-    display:flex;
-    justify-content: column;
-    align-items: center; 
-  }
-
-  .header h1 {
-    display:flex;
-    justify-content: column;
-    align-items: center;
+  .header h1{
+    width: auto;
+    height: auto;
   }
 
   .header-content {
-    display:flex;
+    width:auto;
+    height:auto;
+    position: static;
+    gap:4rem;
   }
 
-  #teknolojik {
-    font-size:5rem;
-    align-self: center;
-    text-align: center;
+  .header-content h1 {
+    width:auto;
+    height:auto;
+    font-size: 8.6rem;
+    position: relative;
+    top:0;
   }
 
   .header-content h2 {
-    display:none;
+    width: auto;
+    height: auto;
+    display: none;
   }
-  
-  .header-content h1 {
-    width: 40rem;
+
+  #teknolojik{
+    width: auto;
+    height: auto;
+    top:12.6rem;
   }
 
 }
